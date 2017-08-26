@@ -1,0 +1,12 @@
+body {background-color: #4FE6EE;}
+h1{background-color: red;}
+p{color: black;}
+p{font-family: Ubuntu;}
+h1{font-family: Ubuntu; }
+p{background-color: yellow;}
+p{border: 5px solid black;}
+h1{border:10px solid yellow;}
+#ultimo{font-family: Ubuntu; background-color: green;}
+
+.special {
+	border: 5px dotted blue;}
