@@ -9,6 +9,7 @@ border: 5px solid #8B4500;
 p {
 color: #8B4513;
 font-family: verdana; 
+
 }
 h2 {
 font-family: verdana; 
@@ -19,4 +20,12 @@ h3 {
 	font-family: verdana; 
 color: #D2691E;
 border: 2px solid #8B4500;
+}
+a{
+color: #cc33ff;
+text-decoration: none; 
+}
+a:hover {
+color: #ff6600;
+text-decoration: underline;	
 }
