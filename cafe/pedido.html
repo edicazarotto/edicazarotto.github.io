@@ -9,10 +9,12 @@
 </head>
 
 		<body>
+		<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post">
+
 
 		<h3>Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</h3><br>
 			<h3>Escolha a variedade dos Grãos:</h3>	
-			<select name="Tipo do Grão">
+			<select name="TipodoGrao">
 		<option value="Italiano">Grãos da Italia</option> 
 		<option value="Himalaiano">Grãos do Himalaia</option> 
 		<option value="Brasileiro">Grãos do Brasil</option> 
@@ -33,10 +35,16 @@
 
 			<h3>Enviar para:</h3>
 			Nome:<input type="text" name="nome" value="">	       
-			 Endereço:<input type="text" name="endereço" value="">
+			 Endereço:<input type="text" name="endereco" value="">
 			Cidade:<input type="text" name="cidade" value="">
 			Estado:<input type="text" name="estado" value="">
-			CEP:<input type="text" name="cep" value="">
+			CEP:<input type="text" name="cep" value=""><br><br>
+
+			Obs:<textarea name="Obs"></textarea><br><br>
+
+			<input type="submit" value="Enviar Pedido"><br>
+			<input type="reset" value="Limpar">
+
 
 
 
