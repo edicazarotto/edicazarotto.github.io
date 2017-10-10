@@ -1,0 +1,88 @@
+<html>
+<title>Pedido</title>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" href="estilos.css">
+<center>
+<h1>Café Starbugs</h1>
+<h2>Pedido Online</h2>
+</head>
+
+		<body>
+		<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post">
+
+
+		<h3>Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</h3><br>
+
+
+
+<table>
+		<tr><th><h3>Dados de Contato:</h3></th></tr>
+			 <tr><td>Nome Completo:</td><td><input type="text" name="nome" value=""></td>	 </tr>      
+			 E-mail:<input type="email" name="email" value="">
+			 Telefone:<input type="number" name="telefone" value="">
+			
+
+			<h3>Informações do Pedido:</h3>	
+			Variedade:
+		<select name="TipodoGrao">
+		<option value="Italiano">Grãos da Italia</option> 
+		<option value="Himalaiano">Grãos do Himalaia</option> 
+		<option value="Brasileiro">Grãos do Brasil</option> 
+		<option value="Japones">Grãos do Japão</option> 
+		<option value="Colombiano">Grãos da Colombia</option> 
+		</select><br><br>
+			Quantidade: <input type="number" name="quantidade"><br>
+			Data Limite: <input type="date" name="DataLimite"><br>
+
+
+	 
+		
+
+		   Tipo:<br><br>
+			<input type="radio" name="tipo" value="inteiros"> Grãos Inteiro <br>
+			<input type="radio" name="tipo" value="moidos" > Grãos Moídos <br><br>
+
+			Extras:<br><br>
+			<input type="checkbox" name="extras1" value="embalar">Embalar para Presente<br>
+			<input type="checkbox" name="extras" value="catalogo"> Quero um catalogo com cafés especiais<br>
+
+			<h3>Dados de Entrega:</h3>
+
+			Endereço: <input type="text" name="Endereco"><br><br>
+			Cidade/Estado: <input type="text" name="cidade"> / <select name="estado"> 
+		<option value="RS">RS</option> 
+		<option value="SC">SC</option> 
+		<option value="AC">AC </option> 
+		<option value="AP">AP</option> 
+		<option value="AL">ÁL</option> 
+		<option value="AM"> AM </option> 
+		<option value="BA">  BA</option> 
+		<option value="CE">  CE</option> 
+		<option value="DF">  DF</option> 
+		<option value="ES">  ES</option> 
+		<option value="GO">  GO</option> 
+		<option value="MA">  MA</option> 
+		</select><br><br>
+
+		CEP: <input type="text" name="cep" ><br><br>
+
+
+
+
+
+			
+			Obs:<textarea name="Obs"></textarea><br><br>
+
+			<input type="submit" value="Enviar Pedido"><br><br>
+			<input type="reset" value="Limpar">
+
+
+
+
+
+
+
+		</center>
+		</body>
+		</html>
