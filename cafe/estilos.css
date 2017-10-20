@@ -29,3 +29,22 @@ a:hover {
 color: #ff6600;
 text-decoration: underline;	
 }
+th {
+border: 0;
+color: #000080;
+text-align: left;
+}
+table{
+	text-align: left;
+	border-color: #000080; 
+	border-width: 2;
+
+}
+
+.formfield{
+	text-align: right;
+	border: 0;
+}
+td{
+	border: 0;
+}

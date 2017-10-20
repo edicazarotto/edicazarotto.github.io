@@ -1,0 +1,76 @@
+<html>
+<title>Pedido</title>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<h1>Pedido Online</h1>
+<h2>Preencha todos os campos corretamente.</h2><br>
+		<body>
+		<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post">
+			<table border="">
+				<tr><th colspan="2">Dados de Contato</th></tr>
+				<tr><td class="formfield">Nome completo:</td><td><input type="text" name="nome" placeholder="Nome Aqui" required="nome"></td></tr>
+				<tr><td class="formfield">Email:</td><td><input type="Email" name="email" placeholder="tabe.1@gmail.com" required="ema"></td></tr>
+				<tr><td class="formfield">Telefone:</td><td><input type="number" name="numero" placeholder="(55) 9 9999 9999"></td></tr>
+
+				<tr><th colspan="2">Informações do Pedido </th></tr>
+
+				<tr><td class="formfield">Variedade:</td><td>	<select name="TipodoGrao">
+		<option value="Italiano">Grãos da Italia</option> 
+		<option value="Himalaiano">Grãos do Himalaia</option> 
+		<option value="Brasileiro">Grãos do Brasil</option> 
+		<option value="Japones">Grãos do Japão</option> 
+		<option value="Colombiano">Grãos da Colombia</option> 
+		</select></td></td></tr>
+				<tr><td class="formfield">Quantidade:</td><td><input type="number" name="quantidade" placeholder="1"></td></tr>
+				<tr><td class="formfield">Tipo:</td><td><input type="radio" name="tipoGrao" value="inteiro">Grãos Inteiros<br><input type="radio" name="TipoGrao" value="moido">Grãos Moídos</td></tr>
+				<tr><td class="formfield">Extras:</td><td><input type="checkbox" name="extras" value="presente">Embalar para presente <br><input type="checkbox" name="xtras2" value="catalogo">Quero um Catálogo com cafés especiais</td></tr>
+
+				<tr><th colspan="2">Dados da Entrega</th></tr>
+
+				<tr><td class="formfield">Endereço:<td><input type="text" name="endereco" placeholder="Rua das Girrafas, apto 1 - Centro"></td></td>
+				</tr>
+				<tr><td class="formfield">Cidade/Estado:</td><td><input type="text" name="cidade" placeholder="Cerro Gande"> / <select name="estados-brasil">
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+</select>
+</td></tr>
+		<TR><td class="formfield">CEP:</td><td><input type="text" name="cep" placeholder="00000-000"></td></TR>
+		<tr><td class="formfield">Observações:</td><td><textarea placeholder="Sem açucar" name="obs"></textarea></td></tr>
+		<tr><td></td> <td><input type="reset" name="Limpar" value="Limpar Campos"> <input type="submit" value="Enviar Pedido"></td></tr>
+		
+		
+
+
+</table>
+<hr color="#000080">
+
+		</center>
+		</body>
+		</html>
