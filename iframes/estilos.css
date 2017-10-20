@@ -1,0 +1,13 @@
+iframe{
+	background-color: gray; 
+	border: 1;
+	border-color: red;
+	size: 550;
+}
+h2{
+	color: red;
+	font: verdana;
+}
+span {
+background-color:red; color:white; padding: 4px;
+}
