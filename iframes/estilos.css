@@ -1,8 +1,8 @@
 iframe{
 	background-color: gray; 
-	border: 1;
-	border-color: red;
-	size: 550;
+	border: 2;
+	border-color: blue;
+	size: 900;
 }
 h2{
 	color: red;
