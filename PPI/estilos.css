@@ -1,0 +1,74 @@
+body {
+background-color: #EAEAAE;
+}
+
+h1 {
+color: #A62A2A;
+}
+
+h3 {
+	color: #8C1717;
+}
+
+p {
+color: ;
+}
+
+#topo {
+	display: table-cell;
+	float: right
+}
+
+.resumo {
+	display: table-cell;
+	float: left;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
+
+.introdução {
+	display: table-cell;
+	float: left;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
+
+.objetivos {
+	display: table-cell;
+	float: left;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
+
+.metodologia {
+	display: table-cell;
+	float: right;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
+
+.pros {
+	display: table-cell;
+	float: right;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
+
+.contras {
+	display: table-cell;
+	float: right;
+	width: 500px;
+	margin-left: 30px;
+	font-family: Abel;
+	font-size: 15px;
+}
