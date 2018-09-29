@@ -3,85 +3,73 @@
 <meta charset="utf-8">
 <head>
 <link rel="stylesheet" href="estilos.css">
-<center>
-<h1>Café Starbugs</h1>
-<h2>Pedido Online</h2>
 </head>
-
+<h1>Pedido Online</h1>
+<h2>Preencha todos os campos corretamente.</h2><br>
 		<body>
 		<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post">
+			<table border="">
+				<tr><th colspan="2">Dados de Contato</th></tr>
+				<tr><td class="formfield">Nome completo:</td><td><input type="text" name="nome" placeholder="Nome Aqui" required="nome"></td></tr>
+				<tr><td class="formfield">Email:</td><td><input type="Email" name="email" placeholder="tabe.1@gmail.com" required="ema"></td></tr>
+				<tr><td class="formfield">Telefone:</td><td><input type="number" name="numero" placeholder="(55) 9 9999 9999"></td></tr>
 
+				<tr><th colspan="2">Informações do Pedido </th></tr>
 
-		<h3>Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</h3><br>
-
-
-
-<table>
-		<tr><th><h3>Dados de Contato:</h3></th></tr>
-			 <tr><td>Nome Completo:</td><td><input type="text" name="nome" value=""></td>	 </tr>      
-			 E-mail:<input type="email" name="email" value="">
-			 Telefone:<input type="number" name="telefone" value="">
-			
-
-			<h3>Informações do Pedido:</h3>	
-			Variedade:
-		<select name="TipodoGrao">
+				<tr><td class="formfield">Variedade:</td><td>	<select name="TipodoGrao">
 		<option value="Italiano">Grãos da Italia</option> 
 		<option value="Himalaiano">Grãos do Himalaia</option> 
 		<option value="Brasileiro">Grãos do Brasil</option> 
 		<option value="Japones">Grãos do Japão</option> 
 		<option value="Colombiano">Grãos da Colombia</option> 
-		</select><br><br>
-			Quantidade: <input type="number" name="quantidade"><br>
-			Data Limite: <input type="date" name="DataLimite"><br>
+		</select></td></td></tr>
+				<tr><td class="formfield">Quantidade:</td><td><input type="number" name="quantidade" placeholder="1"></td></tr>
+				<tr><td class="formfield">Tipo:</td><td><input type="radio" name="tipoGrao" value="inteiro">Grãos Inteiros<br><input type="radio" name="TipoGrao" value="moido">Grãos Moídos</td></tr>
+				<tr><td class="formfield">Extras:</td><td><input type="checkbox" name="extras" value="presente">Embalar para presente <br><input type="checkbox" name="xtras2" value="catalogo">Quero um Catálogo com cafés especiais</td></tr>
 
+				<tr><th colspan="2">Dados da Entrega</th></tr>
 
-	 
+				<tr><td class="formfield">Endereço:<td><input type="text" name="endereco" placeholder="Rua das Girrafas, apto 1 - Centro"></td></td>
+				</tr>
+				<tr><td class="formfield">Cidade/Estado:</td><td><input type="text" name="cidade" placeholder="Cerro Gande"> / <select name="estados-brasil">
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AP">Amapá</option>
+	<option value="AM">Amazonas</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MT">Mato Grosso</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PR">Paraná</option>
+	<option value="PE">Pernambuco</option>
+	<option value="PI">Piauí</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SP">São Paulo</option>
+	<option value="SE">Sergipe</option>
+	<option value="TO">Tocantins</option>
+</select>
+</td></tr>
+		<TR><td class="formfield">CEP:</td><td><input type="text" name="cep" placeholder="00000-000"></td></TR>
+		<tr><td class="formfield">Observações:</td><td><textarea placeholder="Sem açucar" name="obs"></textarea></td></tr>
+		<tr><td></td> <td><input type="reset" name="Limpar" value="Limpar Campos"> <input type="submit" value="Enviar Pedido"></td></tr>
+		
 		
 
-		   Tipo:<br><br>
-			<input type="radio" name="tipo" value="inteiros"> Grãos Inteiro <br>
-			<input type="radio" name="tipo" value="moidos" > Grãos Moídos <br><br>
 
-			Extras:<br><br>
-			<input type="checkbox" name="extras1" value="embalar">Embalar para Presente<br>
-			<input type="checkbox" name="extras" value="catalogo"> Quero um catalogo com cafés especiais<br>
-
-			<h3>Dados de Entrega:</h3>
-
-			Endereço: <input type="text" name="Endereco"><br><br>
-			Cidade/Estado: <input type="text" name="cidade"> / <select name="estado"> 
-		<option value="RS">RS</option> 
-		<option value="SC">SC</option> 
-		<option value="AC">AC </option> 
-		<option value="AP">AP</option> 
-		<option value="AL">ÁL</option> 
-		<option value="AM"> AM </option> 
-		<option value="BA">  BA</option> 
-		<option value="CE">  CE</option> 
-		<option value="DF">  DF</option> 
-		<option value="ES">  ES</option> 
-		<option value="GO">  GO</option> 
-		<option value="MA">  MA</option> 
-		</select><br><br>
-
-		CEP: <input type="text" name="cep" ><br><br>
-
-
-
-
-
-			
-			Obs:<textarea name="Obs"></textarea><br><br>
-
-			<input type="submit" value="Enviar Pedido"><br><br>
-			<input type="reset" value="Limpar">
-
-
-
-
-
-
+</table>
+<hr color="#000080">
 
 		</center>
 		</body>
